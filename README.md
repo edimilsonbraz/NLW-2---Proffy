@@ -1,7 +1,7 @@
 
 <h1 align="center">
 <br>
-  <img src="https://ik.imagekit.io/1n1swj1w28/Proffy_1_-21O8rYmd.png" alt="PROFFY" width="120">
+  <img src="https://ik.imagekit.io/1n1swj1w28/Proffy_1_-21O8rYmd.png" alt="PROFFY" width="700">
 <br>
 <br>
 NLW#2 -- Proffy
