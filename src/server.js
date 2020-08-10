@@ -3,7 +3,7 @@
 const express = require('express')
 const server = express()
 
-const { pageLanding, pageStudy, pageGiveClasses, saveClasses } = require('./pages')
+const { pageLanding, pageStudy, pageGiveClasses, saveClasses, cadastroSalvo } = require('./pages')
 
 
 // configurar nunjucks(Template engine)
@@ -21,6 +21,7 @@ server
 .get("/", pageLanding)
 .get("/study", pageStudy)
 .get("/give-classes", pageGiveClasses)
+.get("/cadastro-salvo", cadastroSalvo)
 .post("/save-classes", saveClasses)
 
 

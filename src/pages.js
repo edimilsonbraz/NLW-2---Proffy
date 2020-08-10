@@ -77,22 +77,34 @@ async function saveClasses(req, res) {
     try {
         const db = await Database
         await createProffy(db, {proffyValue, classValue, classScheduleValues })
+        
 
         let queryString = "?subject=" + req.body.subject
         queryString += "&weekday=" + req.body.weekday[0]
         queryString += "&time=" + req.body.time_from[0]
 
-        return res.redirect("/study" + queryString)
+        return res.redirect("/cadastro-salvo")
+        
+        // setTimeout(function() {
+        //         // res.redirect("/cadastro-salvo")
+        //      window.location.href = ("/study" + queryString)
+        // }, 2000);
+
+        // return res.redirect("/study" + queryString)
     } catch (error) {
         console.log(error)
     }
         
 }
 
+function cadastroSalvo(req, res) {
+    return res.render("cadastro-salvo")
+}
 
 module.exports = {
     pageLanding,
     pageStudy,
     pageGiveClasses,
-    saveClasses
+    saveClasses,
+    cadastroSalvo
 }
